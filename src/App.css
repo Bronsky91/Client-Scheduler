@@ -1,0 +1,250 @@
+.week {
+  background: gray;
+}
+.selected {
+  background-color: rgb(149, 221, 177);
+}
+.slotbox {
+  margin-right: 5px;
+  padding: 5px;
+  background-color: #c9d5ec;
+  border-radius: 5px;
+  height: 32px;
+  animation: 0.5s dropin 0s forwards;
+}
+.timespan {
+  margin: 0;
+  padding: 0;
+}
+.remove {
+background-color: Transparent;
+background-repeat:no-repeat;
+border: none;
+cursor:pointer;
+overflow: hidden;
+outline:none;
+float: right;
+}
+.remove:hover{
+ color: red;
+}
+.slottable {
+  display: grid;
+  grid-template-columns: 130px 130px 130px 130px 130px;
+  grid-gap: 10px;
+  color: #444;
+  padding: 10px;
+}
+.slotdays {
+ display: grid;
+ grid-row-gap: 10px;
+ border-radius: 5px;
+ padding: 10px;
+}
+.day {
+ text-align: center;
+ height: 25px;
+}
+.pickerTable {
+  display: grid;
+  grid-template-columns: 400px 300px 300px;
+  margin: 30px auto 0px;
+  width: 95%;
+}
+.dayWindow  {
+  margin-top: 100px;
+}
+.slotsTitle{
+  border-bottom: solid slategray 2px;
+  display: inline-block;
+  margin-left: 5px;
+  margin-bottom: 2px;
+}
+.picker-timeSlot {
+  color: white;
+  background: #448AFF;
+  height: 30px;
+  width: 150px;
+  border-radius: 5px;
+  text-align: center;
+  padding-top: 12px;
+  margin-top: 5px;
+  margin-left: 5px;
+  transition: box-shadow 300ms, transform 300ms ;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+.picker-timeSlot:hover {
+  cursor: pointer;
+  box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.5);
+  transform: scale(1.05);
+}
+.selectedTime {
+  color: black;
+  background-color:#81e29b;
+}
+.pickerForm{
+  margin-top: 100px;
+}
+body {
+  background-color: #a1b0c9;
+}
+.noAdvisor{
+  margin: 10em auto 0em;
+  width: 70%;
+  height: 10em;
+}
+
+.auth {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 50vh;
+  margin: 10vh auto;
+  width: 50vh;
+  border-radius: 10%;
+}
+
+.authform {
+  text-align: center;
+  width: 45vh;
+  opacity: 0;
+  animation: 1s fadebottom 0.5s forwards;
+  margin-top: 100px;
+}
+
+.authheader {
+ font-family: 'Dosis', sans-serif;
+ font-size: 40px;
+ margin-bottom: 20px;
+}
+label {
+  font-family: helvetica;
+}
+
+.authsubmit {
+  background-color: #e7e7e7;;
+  border: none;
+  text-align: center;
+  font-size: 14px;
+  height: 30px;
+  width: 75px;
+}
+
+.authsubmit:hover {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 3px 10px 0;
+  cursor: pointer;
+}
+
+.authsubmit:active {
+  height: 29px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2),0 3px 5px 0;
+}
+
+@keyframes fadebottom {
+  100% { 
+    opacity: 1; 
+    transform: translateY(-50px);
+  }
+}
+
+@keyframes fadetop {
+  100% {
+    opacity: 1; 
+    transform: translateY(50px);
+  }
+}
+
+@keyframes fadeleft {
+  100% {
+    opacity: 1;
+    transform: translateX(75px);
+  }
+}
+
+@keyframes faderight {
+  100% {
+    opacity: 1;
+    transform: translateX(-75px);
+  }
+}
+
+@keyframes dropin {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(-10px);
+    opacity: 1;
+  }
+}
+
+.dash {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.dashheader {
+  font-family: 'Dosis', sans-serif;
+  font-size: 50px;
+  border-bottom: slategray solid;
+  opacity: 0;
+  animation: 1s fadetop 0.5s forwards;
+  margin: 0 auto 100px;
+  text-align: center;
+  width: 400px;
+}
+.dash-title {
+  margin-right: 75px;
+  opacity: 0;
+  font-family: 'Dosis', sans-serif;
+  animation: 1s fadeleft 1s forwards;
+}
+.dash-user {
+  display: flex;
+  font-family: 'Dosis', sans-serif;
+  margin-bottom: 50px;
+}
+.dash-user-form {
+  border-left: slategray solid;
+  padding-left: 30px;
+  margin-left: 100px;
+  opacity: 0;
+  animation: 1s faderight 1s forwards;
+}
+.dash-timeslots {
+  display: flex;
+
+}
+.dash-slot-title {
+  margin-right: 75px;
+  opacity: 0;
+  font-family: 'Dosis', sans-serif;
+  animation: 1s fadeleft 1s forwards;
+}
+.dash-slot-selector {
+  border-left: slategray solid;
+  padding-left: 30px;
+  margin-left: 100px;
+  opacity: 0;
+  animation: 1s faderight 1s forwards;
+}
+.dash-slot-form {
+  animation: 1s fadebottom 1s forwards;
+  margin-top: 100px;
+  margin-bottom: 10px;
+  opacity: 0;
+  align-items: flex-start;
+}
+.slotsubmit {
+  margin-bottom: 30px;
+}
+.logout {
+  margin: 75px auto 0px;
+  opacity: 0;
+  animation: 1s fadebottom 2s forwards;
+}
+.logout-page {
+  margin: 10em auto 0;
+  width: 50%;
+  text-align: center;
+}
