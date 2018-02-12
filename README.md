@@ -13,4 +13,4 @@ The process goes as follows:
     
 Further notes:
 
-    The Redtail API Key used in this app is not uploaded here but is located in the constants.rb file that is ignored by git and given the variable name API_KEY.
+The Redtail API Key used in this app is not uploaded here but is located in the constants.rb file that is ignored by git and given the variable name API_KEY.
